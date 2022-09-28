@@ -1,6 +1,87 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title='StartupsofKerala | Home'>hello</Layout>
+<Layout title='StartupsofKerala | Home'>
+  <!-- hero section  -->
+  <header
+    class='p-8 py-10'
+    style='background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);'
+  >
+    <!-- navbar  -->
+    <Navbar theme='light' />
+    <h2
+      class='font-black text-3xl md:text-4xl xl:text-5xl text-white w-3/4 text-left md:text-center py-16 md:py-24 md:mx-auto leading-[100%]'
+    >
+      Crowdsourced list of <br /> all startups residing in Kerla
+    </h2>
+  </header>
+  <!-- end hero section  -->
+
+  <!-- main section  -->
+  <main class='py-16'>
+    <div class='flex gap-5 items-start container mx-auto'>
+      <!-- domain select menu -->
+      <div class='flex flex-col flex-[2]'>
+        <div
+          class='py-3 px-4 bg-[#7FB2D9] bg-opacity-[15%] border-r-[10px] rounded-md border-[#2840B7] hover:bg-[#7FB2D9] hover:bg-opacity-[25%] cursor-pointer'
+        >
+          All
+        </div>
+        <div
+          class='py-3 px-4 hover:bg-[#7FB2D9] hover:bg-opacity-[25%] cursor-pointer'
+        >
+          b
+        </div>
+        <div
+          class='py-3 px-4 hover:bg-[#7FB2D9] hover:bg-opacity-[25%] cursor-pointer'
+        >
+          c
+        </div>
+        <div
+          class='py-3 px-4 hover:bg-[#7FB2D9] hover:bg-opacity-[25%] cursor-pointer'
+        >
+          d
+        </div>
+      </div>
+      <!-- end domain select menu -->
+      <!-- list of startups -->
+      <div
+        class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 flex-[6]'
+      >
+        <Card
+          title='HoomansCo'
+          logoPath='/hoomans-logo.jpeg'
+          description='small group of hoomans who believe in the betterment of the hoomans around us through arts & technology.'
+          location='Ernakulam'
+          url='https://hoomans.co'
+        />
+        <Card
+          title='HoomansCo'
+          logoPath='/hoomans-logo.jpeg'
+          description='small group of hoomans who believe in the betterment of the hoomans around us through arts & technology.'
+          location='Ernakulam'
+          url='https://hoomans.co'
+        />
+        <Card
+          title='HoomansCo'
+          logoPath='/hoomans-logo.jpeg'
+          description='small group of hoomans who believe in the betterment of the hoomans around us through arts & technology.'
+          location='Ernakulam'
+          url='https://hoomans.co'
+        />
+        <Card
+          title='HoomansCo'
+          logoPath='/hoomans-logo.jpeg'
+          description='small group of hoomans who believe in the betterment of the hoomans around us through arts & technology.'
+          location='Ernakulam'
+          url='https://hoomans.co'
+        />
+      </div>
+      <!-- end of list of startups -->
+    </div>
+  </main>
+  <!-- end main section  -->
+</Layout>
