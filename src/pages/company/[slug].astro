@@ -1,0 +1,95 @@
+---
+import Navbar from '../../components/Navbar.astro';
+import SocialLinks from '../../components/SocialLinks.astro';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const startups = await Astro.glob('../../../data/*.mdx');
+
+  return startups.map((post) => ({
+    params: {
+      slug: post.frontmatter.name.split(' ')[0].toLowerCase(),
+    },
+    props: {
+      data: post.frontmatter,
+    },
+  }));
+}
+
+const { data } = Astro.props;
+---
+
+<Layout title={`StartupsofKerala | ${data.name}`}>
+  <header class='p-8 py-10'>
+    <Navbar theme='dark' />
+  </header>
+
+  <main class='pt-10 container mx-auto p-8'>
+    <div class='flex flex-col md:flex-row gap-8 xl:gap-16'>
+      <div class='flex flex-col items-center gap-4 md:flex-[1.5] xl:flex-[1]'>
+        <!-- logo -->
+        <div class='border border-[#7c7c7c] rounded-2xl p-10'>
+          <img
+            src={'/' + data.logo}
+            alt={data.name + "'s Logo"}
+            class='w-40 md:w-auto'
+          />
+        </div>
+        <!-- end logo  -->
+
+        <SocialLinks
+          data={{
+            website: data.website,
+            email: data.email,
+            linkedin: data.linkedin,
+            github: data.github,
+          }}
+          styles='hidden md:flex flex-col gap-2 w-full'
+        />
+      </div>
+
+      <div class='flex flex-col items-start flex-[4] gap-3'>
+        <div
+          class='p-1 px-4 bg-[#7FB2D9]/10 rounded-t-md text-sm border-b border-[#1488CC]'
+        >
+          About
+        </div>
+
+        <div>
+          <h1 class='text-4xl font-semibold'>{data.name}</h1>
+          <p class='text-md'>{data.description}</p>
+        </div>
+
+        <div>
+          <div class='underline font-semibold'>Office Address</div>
+          <p set:html={data.address.split(',').join(',</br>')}></p>
+        </div>
+
+        <!-- technologies list  -->
+        {
+          data.technologies && (
+            <div class='flex flex-col gap-1'>
+              <div class='font-semibold text-lg'>Technologies Used</div>
+              <div class='flex flex-wrap gap-2'>
+                {data.technologies.map((tech) => (
+                  <span class='w-12 h-12 bg-blue-200 text-center'>
+                    {tech[0]}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )
+        }
+        <SocialLinks
+          data={{
+            website: data.website,
+            email: data.email,
+            linkedin: data.linkedin,
+            github: data.github,
+          }}
+          styles='flex flex-col gap-2 w-full md:hidden mt-2'
+        />
+      </div>
+    </div>
+  </main>
+</Layout>
