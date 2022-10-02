@@ -1,0 +1,56 @@
+---
+import ExternalLinkIcon from './icons/ExternalLink.astro';
+import MailIcon from './icons/Mail.astro';
+import LinkedinIcon from './icons/Linkedin.astro';
+import GithubIcon from './icons/Github.astro';
+
+export interface Props {
+  data: {
+    website?: string;
+    email?: string;
+    linkedin?: string;
+    github?: string;
+  };
+  styles?: string;
+}
+const { data, styles } = Astro.props;
+---
+
+<div class={styles || ''}>
+  <!-- website link  -->
+  {
+    data.website && (
+      <a href={data.website} class='link-button bg-black'>
+        <ExternalLinkIcon />
+        <span>Visit Website</span>
+      </a>
+    )
+  }
+  <!-- email link  -->
+  {
+    data.email && (
+      <a href={'mailto:' + data.email} class='link-button bg-[#BB001B]'>
+        <MailIcon />
+        <span>Email</span>
+      </a>
+    )
+  }
+  <!-- linked link  -->
+  {
+    data.linkedin && (
+      <a href={data.linkedin} class='link-button bg-[#0077B5]'>
+        <LinkedinIcon />
+        <span>Linkedin</span>
+      </a>
+    )
+  }
+  <!-- github link  -->
+  {
+    data.github && (
+      <a href={data.github} class='link-button bg-black'>
+        <GithubIcon />
+        <span>Github</span>
+      </a>
+    )
+  }
+</div>
