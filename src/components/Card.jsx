@@ -12,7 +12,7 @@ const Card = ({ data }) => {
         <p class='text-sm'>{data.description}</p>
       </div>
       <a
-        href={'/company/' + data.name.split(' ')[0].toLowerCase()}
+        href={'/company/' + data.url}
         class='text-[#7c7c7c] hover:text-black flex gap-1 items-center text-sm underline'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
