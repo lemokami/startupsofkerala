@@ -2,7 +2,11 @@ const Card = ({ data }) => {
   return (
     <div class='rounded-xl px-8 py-6 flex flex-col items-center justify-between border-2 border-[#dcdcdc] bg-white'>
       <div class='h-36 w-full flex items-center justify-center'>
-        <img src={'/' + data.logo} alt={data.name + "'s Logo"} class='h-32' />
+        <img
+          src={'/logos/' + data.logo}
+          alt={data.name + "'s Logo"}
+          class='h-32'
+        />
       </div>
       <div class='flex flex-col items-center mb-8'>
         <h4 class='font-semibold text-lg -mb-0.5'>{data.name}</h4>
