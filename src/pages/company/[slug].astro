@@ -1,8 +1,9 @@
 ---
-import Navbar from '../../components/Navbar.astro';
-import SocialLinks from '../../components/SocialLinks.astro';
-import { generateRoutename } from '../../helpers';
 import Layout from '../../layouts/Layout.astro';
+import { generateRoutename } from '../../helpers';
+import Navbar from '../../components/Navbar.astro';
+import TechList from '../../components/TechList.astro';
+import SocialLinks from '../../components/SocialLinks.astro';
 
 export async function getStaticPaths() {
   const startups = await Astro.glob('../../../data/*.mdx');
@@ -61,26 +62,32 @@ const { data } = Astro.props;
           <p class='text-md'>{data.description}</p>
         </div>
 
+        <table class='stat-table'>
+          <tbody>
+            <tr>
+              <th>Founded on</th>
+              <td>{data.founded}</td>
+            </tr>
+            <tr>
+              <th>Product/Service</th>
+              <td>{data.based}</td>
+            </tr>
+            <tr>
+              <th>Domain</th>
+              <td>{data.domain}</td>
+            </tr>
+          </tbody>
+        </table>
+
         <div>
           <div class='underline font-semibold'>Office Address</div>
           <p set:html={data.address.split(',').join(',</br>')}></p>
         </div>
 
         <!-- technologies list  -->
-        {
-          data.technologies && (
-            <div class='flex flex-col gap-1'>
-              <div class='font-semibold text-lg'>Technologies Used</div>
-              <div class='flex flex-wrap gap-2'>
-                {data.technologies.map((tech) => (
-                  <span class='w-12 h-12 bg-blue-200 text-center'>
-                    {tech[0]}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )
-        }
+        {data.technologies && <TechList data={data.technologies} />}
+
+        <!-- social links list mobile view  -->
         <SocialLinks
           data={{
             website: data.website,
@@ -88,7 +95,7 @@ const { data } = Astro.props;
             linkedin: data.linkedin,
             github: data.github,
           }}
-          styles='flex flex-col gap-2 w-full md:hidden mt-2'
+          styles='flex flex-col gap-2 w-full md:hidden mt-4'
         />
       </div>
     </div>
