@@ -1,6 +1,7 @@
 ---
 import Navbar from '../../components/Navbar.astro';
 import SocialLinks from '../../components/SocialLinks.astro';
+import { generateRoutename } from '../../helpers';
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
@@ -8,7 +9,7 @@ export async function getStaticPaths() {
 
   return startups.map((post) => ({
     params: {
-      slug: post.frontmatter.name.split(' ')[0].toLowerCase(),
+      slug: generateRoutename(post.url),
     },
     props: {
       data: post.frontmatter,

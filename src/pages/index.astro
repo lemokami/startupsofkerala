@@ -2,9 +2,13 @@
 import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
 import Listing from '../components/Listing.jsx';
+import { generateRoutename } from '../helpers';
 
 const startups = await Astro.glob('../../data/*.mdx');
-const frontmatter = startups.map((post) => post.frontmatter);
+const frontmatter = startups.map((post) => ({
+  ...post.frontmatter,
+  url: generateRoutename(post.url),
+}));
 ---
 
 <Layout title='StartupsofKerala | Home'>
