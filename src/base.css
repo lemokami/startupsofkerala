@@ -15,6 +15,18 @@
     @apply bg-[#7FB2D9] bg-opacity-[15%] border-r-[8px] rounded-md border-[#2840B7];
   }
   .link-button {
-    @apply rounded-md text-left text-white md:text-sm font-medium p-3 cursor-pointer flex items-center gap-2 hover:underline;
+    @apply rounded-md text-left text-white md:text-sm font-medium p-3 px-5 cursor-pointer flex items-center gap-2.5 hover:underline;
+  }
+  .stat-table {
+    @apply border;
+  }
+  .stat-table > tbody > tr {
+    @apply border-b;
+  }
+  .stat-table > tbody > tr > th {
+    @apply px-4 text-left font-semibold;
+  }
+  .stat-table > tbody > tr > td {
+    @apply py-2 border-l px-4 bg-[#fafafa];
   }
 }
