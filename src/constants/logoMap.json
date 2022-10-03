@@ -1,0 +1,10 @@
+{
+  "django": "django-logo.png",
+  "python": "python-logo.png",
+  "react": "react-logo.png",
+  "javascript": "javascript-logo.png",
+  "nextjs": "nextjs-logo.png",
+  "supabase": "supabase-logo.png",
+  "flutter": "flutter-logo.png",
+  "typescript": "typescript-logo.png"
+}
