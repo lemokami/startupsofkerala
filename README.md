@@ -12,6 +12,15 @@
 # <a href="https://startupsofkerala.in">Startupsofkerala.in</a>
 Crowdsourced list of all startups founded or residing in Kerala
 
+## Contributing
+> ✨ First time contributors please refer this [link](https://github.com/lemokami/startupsofkerala/blob/main/CONTRIBUTING.md#your-first-code-contribution)
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
 ## Run Locally
 
 Clone the project
