@@ -1,49 +1,54 @@
-# Welcome to [Astro](https://astro.build)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+![banner-wide](https://user-images.githubusercontent.com/44605554/193792009-b3da1542-ddce-46e4-a9c4-43f0376c737c.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<!-- shields -->
+![GitHub forks](https://img.shields.io/github/forks/lemokami/startupsofkerla?style=social)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/lemokami/startupsofkerala)
+![GitHub last commit](https://img.shields.io/github/last-commit/lemokami/startupsofkerala)
+![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2022/lemokami/startupsofkerala)
+![GitHub](https://img.shields.io/github/license/lemokami/startupsofkerala)
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+# <a href="https://startupsofkerala.in">Startupsofkerala.in</a>
+Crowdsourced list of all startups founded or residing in Kerala
 
+## Run Locally
 
-## 🚀 Project Structure
+Clone the project
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+  git clone https://github.com/lemokami/startupsofkerala
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Go to the project directory
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+  cd startupsofkerala
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Install dependencies
 
-## 🧞 Commands
+```bash
+  npm install 
+```
 
-All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
+Start the dev server
 
-## 👀 Want to learn more?
+```bash
+  npm run dev
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## License
+
+[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
