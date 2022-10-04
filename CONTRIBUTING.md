@@ -19,16 +19,13 @@ All types of contributions are encouraged and valued. See the [Table of Contents
   - [Reporting Bugs](#reporting-bugs)
   - [Suggesting Enhancements](#suggesting-enhancements)
   - [Your First Code Contribution](#your-first-code-contribution)
-  - [Improving The Documentation](#improving-the-documentation)
+    - [Adding Company Data](#adding-company-data)  
 - [Styleguides](#styleguides)
   - [Commit Messages](#commit-messages)
-- [Join The Project Team](#join-the-project-team)
 
 
 
 ## I Have a Question
-
-> If you want to ask a question, we assume that you have read the available [Documentation]().
 
 Before you ask a question, it is best to search for existing [Issues](https://github.com/lemokami/startupsofkerala/issues) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
 
@@ -68,7 +65,6 @@ Depending on how large the project is, you may want to outsource the questioning
 A good bug report shouldn't leave others needing to chase you up for more information. Therefore, we ask you to investigate carefully, collect information and describe the issue in detail in your report. Please complete the following steps in advance to help us fix any potential bug as fast as possible.
 
 - Make sure that you are using the latest version.
-- Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the [documentation](). If you are looking for support, you might want to check [this section](#i-have-a-question)).
 - To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/lemokami/startupsofkeralaissues?q=label%3Abug).
 - Also make sure to search the internet (including Stack Overflow) to see if users outside of the GitHub community have discussed the issue.
 - Collect information about the bug:
@@ -108,7 +104,6 @@ This section guides you through submitting an enhancement suggestion for Startup
 #### Before Submitting an Enhancement
 
 - Make sure that you are using the latest version.
-- Read the [documentation]() carefully and find out if the functionality is already covered, maybe by an individual configuration.
 - Perform a [search](https://github.com/lemokami/startupsofkerala/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 - Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, consider writing an add-on/plugin library.
 
@@ -126,25 +121,56 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/lemoka
 <!-- You might want to create an issue template for enhancement suggestions that can be used as a guide and that defines the structure of the information to be included. If you do so, reference it here in the description. -->
 
 ### Your First Code Contribution
-<!-- TODO
-include Setup of env, IDE and typical getting started instructions?
 
--->
+#### Adding Company Data
 
-### Improving The Documentation
-<!-- TODO
-Updating, improving and correcting the documentation
+Adding startup company data to the codebase would be an awesome✨ first contribution. Do the following steps and push your first contribution💪
 
--->
+1. Fork the repository
+
+2.  Clone the repository locally or edit it online
+```bash
+git clone <repository_url>
+```
+
+3. Go to the project folder
+```bash
+cd <folder_name>
+```
+
+4.  Go to the data folder 
+
+5. Create an mdx file and fill the blanks in the template given below
+```yml
+---
+name: <enter_company_name>
+description: <enter_company_description>
+founded: <enter_founding_date>
+based: <enter_whether_its_service_or_product_based_or_BOTH>
+domain: <enter_the_domain_the_company_is_in> # refer src/constants/domains.json for reference
+logo: <enter_the_file_name_of_the_logo_uploaded>
+location: <enter_company_location> # the district name will be fine
+address: <enter_company_address>
+technologies: <enter_the_technologies_used_in_the_company>
+website: <add_company_website_link>
+email: <add_company_email>
+linkedin: <add_company_linkedin_url>
+github: <add_company_github_url>
+---
+```
+
+> refer the existing data if you have any doubts
+
+6. Add the company logo inside `public/logos` folder
+
+7. Now create a PR
+
+> 🎉 Congratulations you made your contribution❤️
+
 
 ## Styleguides
 ### Commit Messages
-<!-- TODO
-
--->
-
-## Join The Project Team
-<!-- TODO -->
+Normal meaningful and simple commit messages is always welcome. If you like to follow any standards I'll recommend [Conventional Commits](https://www.conventionalcommits.org/)❤️ which I've been using for the past couple of years.
 
 <!-- omit in toc -->
 ## Attribution
