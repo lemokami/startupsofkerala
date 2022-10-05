@@ -16,6 +16,8 @@
   "ruby": "ruby-logo.png",
   "nodejs": "nodejs-logo.png",
   "figma": "figma-logo.png",
-  "pwa": "pwa-logo.png"
+  "pwa": "pwa-logo.png",
+  "objective c": "objective-c-logo.png",
+  "objective-c": "objective-c-logo.png",
+  "jira": "jira-logo.png"
 }
-
