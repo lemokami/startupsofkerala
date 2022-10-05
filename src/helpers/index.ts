@@ -4,5 +4,5 @@ export const generateRoutename = (fname: string) => {
 };
 
 export const getImagePath = (key: string) => {
-  return logoList[key];
+  return logoList[key.toLowerCase()];
 };
