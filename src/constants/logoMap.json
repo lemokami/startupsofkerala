@@ -6,5 +6,11 @@
   "nextjs": "nextjs-logo.png",
   "supabase": "supabase-logo.png",
   "flutter": "flutter-logo.png",
-  "typescript": "typescript-logo.png"
+  "typescript": "typescript-logo.png",
+  "aws": "aws-logo.png",
+  "java": "java-logo.png",
+  "ror": "ror-logo.png",
+  "rails": "ror-logo.png",
+  "ruby on rails": "ror-logo.png",
+  "ruby": "ruby-logo.png"
 }
