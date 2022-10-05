@@ -5,6 +5,7 @@
   "javascript": "javascript-logo.png",
   "nextjs": "nextjs-logo.png",
   "supabase": "supabase-logo.png",
+  "firebase": "firebase-logo.png",
   "flutter": "flutter-logo.png",
   "typescript": "typescript-logo.png",
   "aws": "aws-logo.png",
@@ -12,5 +13,9 @@
   "ror": "ror-logo.png",
   "rails": "ror-logo.png",
   "ruby on rails": "ror-logo.png",
-  "ruby": "ruby-logo.png"
+  "ruby": "ruby-logo.png",
+  "nodejs": "nodejs-logo.png",
+  "figma": "figma-logo.png",
+  "pwa": "pwa-logo.png"
 }
+
