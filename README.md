@@ -1,5 +1,5 @@
 
-![banner-wide](https://user-images.githubusercontent.com/44605554/193792009-b3da1542-ddce-46e4-a9c4-43f0376c737c.png)
+![Banner](https://user-images.githubusercontent.com/44605554/193991079-a4c32865-18f0-4709-9322-a89c614b3114.png)
 
 <!-- shields -->
 ![GitHub forks](https://img.shields.io/github/forks/lemokami/startupsofkerala?style=social)
