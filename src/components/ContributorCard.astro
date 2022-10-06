@@ -1,0 +1,25 @@
+---
+export interface Props {
+  imageUrl: string;
+  contributions: number;
+  username: string;
+  githubUrl: string;
+}
+const { imageUrl, contributions, username, githubUrl } = Astro.props;
+---
+
+<a href={githubUrl} class='contributor-card'>
+  <div class='rounded-md h-64 xl:h-56 overflow-hidden'>
+    <img
+      src={imageUrl}
+      alt={username + "'s github profile image"}
+      class='object-cover h-full'
+    />
+  </div>
+  <div class='pt-4 flex flex-col items-center'>
+    <h3 class='font-bold'>{username}</h3>
+    <p class='text-gray-500'>
+      {contributions} contributions
+    </p>
+  </div>
+</a>
