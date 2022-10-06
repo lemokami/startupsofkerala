@@ -1,0 +1,37 @@
+---
+import ContributorCard from '../components/ContributorCard.astro';
+import Navbar from '../components/Navbar.astro';
+import { getContributorData } from '../helpers/octokit';
+import Layout from '../layouts/Layout.astro';
+
+const contributors = await getContributorData('lemokami', 'startupsofkerala');
+---
+
+<Layout title='StartupsofKerala | Contributors'>
+  <header class='p-8 py-10'>
+    <Navbar theme='dark' />
+    <div
+      class='flex flex-col items-center justify-center py-24 container mx-auto'
+    >
+      <h1 class='text-5xl text-center font-bold capitalize leading-snug'>
+        Contributors
+      </h1>
+      <p class='text-center text-gray-500 text-lg'>
+        A big thanks to all the contributors who have helped us build this
+        project.
+      </p>
+    </div>
+  </header>
+  <main class='contributor-list container mx-auto px-8'>
+    {
+      contributors.map((contributor) => (
+        <ContributorCard
+          imageUrl={contributor.avatar_url}
+          contributions={contributor.contributions}
+          username={contributor.login}
+          githubUrl={contributor.html_url}
+        />
+      ))
+    }
+  </main>
+</Layout>

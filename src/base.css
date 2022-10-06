@@ -29,4 +29,10 @@
   .stat-table > tbody > tr > td {
     @apply py-2 border-l px-4 bg-[#fafafa];
   }
+  .contributor-list {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 gap-y-14 justify-items-center;
+  }
+  .contributor-card {
+    @apply flex flex-col items-center rounded-lg border p-2 transform hover:-translate-y-2 hover:-rotate-1 hover:ring-2 hover:ring-cyan-500 hover:ring-offset-2 transition-all hover:shadow-md hover:shadow-cyan-500;
+  }
 }
