@@ -6,6 +6,8 @@ import image from '@astrojs/image';
 import robotsTxt from 'astro-robots-txt';
 import sitemap from '@astrojs/sitemap';
 
+import compress from 'astro-compress';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://startupsofkerala.in',
@@ -18,5 +20,9 @@ export default defineConfig({
     image(),
     sitemap(),
     robotsTxt(),
+    compress({
+      img: false,
+      svg: false,
+    }),
   ],
 });
