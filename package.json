@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/image": "^0.9.1",
     "@astrojs/mdx": "^0.11.3",
+    "@astrojs/partytown": "^1.0.1",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/solid-js": "^1.1.0",
     "@astrojs/tailwind": "^2.0.1",

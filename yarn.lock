@@ -122,6 +122,14 @@
     uvu "^0.5.0"
     vfile-message "^3.0.0"
 
+"@astrojs/partytown@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/partytown/-/partytown-1.0.1.tgz#763733ba3a905a8381fe6e93041445fd0c21acf2"
+  integrity sha512-JVmKwQa2aWMAmz3tkNHtg5hw7gOTI6ROyFIYcUQtN6j8aysEiWKnt4xzz67RvDWId1h7sIde87UeH+4YoEyGug==
+  dependencies:
+    "@builder.io/partytown" "^0.7.1"
+    mrmime "^1.0.0"
+
 "@astrojs/prism@^1.0.0", "@astrojs/prism@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-1.0.1.tgz#a7a778f9e3814885f587d8074a15452947ab4252"
@@ -390,6 +398,11 @@
     "@babel/helper-string-parser" "^7.18.10"
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
+
+"@builder.io/partytown@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.7.1.tgz#aa13b56022609ba2a4d61cf8bf282a94221c1133"
+  integrity sha512-hvu2gG9NDtCa5aoL4JkvDe3E5SegXlHAkhtA+Az96uTtFA0PYuEPjDYGiayGTkZuRKUmxetebWjIFgSDNdlBOw==
 
 "@emmetio/abbreviation@^2.2.3":
   version "2.2.3"
