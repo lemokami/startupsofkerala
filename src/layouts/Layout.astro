@@ -69,6 +69,22 @@ const { title } = Astro.props;
   <body>
     <slot />
     <Footer />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      type='text/partytown'
+      async
+      src='https://www.googletagmanager.com/gtag/js?id=G-V1FSHGHV0B'
+    ></script>
+    <script type='text/partytown'>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-V1FSHGHV0B');
+    </script>
     <style>
       body {
         min-height: 100vh;
