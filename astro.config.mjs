@@ -7,15 +7,28 @@ import robotsTxt from 'astro-robots-txt';
 import sitemap from '@astrojs/sitemap';
 import compress from 'astro-compress';
 
-import partytown from "@astrojs/partytown";
+import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://startupsofkerala.in',
-  integrations: [tailwind({
-    applyBaseStyles: false
-  }), solidJs(), mdx(), image(), sitemap(), robotsTxt(), compress({
-    img: false,
-    svg: false
-  }), partytown()]
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    solidJs(),
+    mdx(),
+    image(),
+    sitemap(),
+    robotsTxt(),
+    compress({
+      img: false,
+      svg: false,
+    }),
+    partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
+  ],
 });
