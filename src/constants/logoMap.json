@@ -19,5 +19,10 @@
   "pwa": "pwa-logo.png",
   "objective c": "objective-c-logo.png",
   "objective-c": "objective-c-logo.png",
-  "jira": "jira-logo.png"
+  "jira": "jira-logo.png",
+  "scala": "scala-logo.png",
+  "druid": "druid-logo.png",
+  "spark": "spark-logo.png",
+  "pyspark": "spark-logo.png",
+  "snowflake": "snowflake-logo.png"
 }
