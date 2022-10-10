@@ -19,5 +19,20 @@
   "pwa": "pwa-logo.png",
   "objective c": "objective-c-logo.png",
   "objective-c": "objective-c-logo.png",
-  "jira": "jira-logo.png"
+  "jira": "jira-logo.png",
+  "scala": "scala-logo.png",
+  "druid": "druid-logo.png",
+  "spark": "spark-logo.png",
+  "pyspark": "spark-logo.png",
+  "snowflake": "snowflake-logo.png",
+  "angular": "angular-logo.png",
+  "bootstrap": "bootstrap-logo.png",
+  "vue": "vue-logo.png",
+  "vuejs": "vue-logo.png",
+  "express": "express-logo.png",
+  "expressjs": "express-logo.png",
+  "mongodb": "mongo-logo.png",
+  "mongo": "mongo-logo.png",
+  "php": "php-logo.png",
+  "swift": "swift-logo.png"
 }
