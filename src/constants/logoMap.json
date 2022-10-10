@@ -41,5 +41,7 @@
   "elixir": "elixir-logo.png",
   "go": "go-logo.png",
   "golang": "go-logo.png",
-  "svelte": "svelte-logo.png"
+  "svelte": "svelte-logo.png",
+  "cpp": "cpp-logo.png",
+  "c++": "cpp-logo.png"
 }
