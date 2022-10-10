@@ -43,5 +43,6 @@
   "golang": "go-logo.png",
   "svelte": "svelte-logo.png",
   "cpp": "cpp-logo.png",
-  "c++": "cpp-logo.png"
+  "c++": "cpp-logo.png",
+  "laravel": "laravel-logo.png"
 }
