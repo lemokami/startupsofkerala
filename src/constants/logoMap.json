@@ -9,6 +9,7 @@
   "flutter": "flutter-logo.png",
   "typescript": "typescript-logo.png",
   "aws": "aws-logo.png",
+  "amazon web services": "aws-logo.png",
   "java": "java-logo.png",
   "ror": "ror-logo.png",
   "rails": "ror-logo.png",
@@ -34,5 +35,10 @@
   "mongodb": "mongo-logo.png",
   "mongo": "mongo-logo.png",
   "php": "php-logo.png",
-  "swift": "swift-logo.png"
+  "swift": "swift-logo.png",
+  "docker": "docker-logo.png",
+  "elixir": "elixir-logo.png",
+  "go": "go-logo.png",
+  "golang": "go-logo.png",
+  "svelte": "svelte-logo.png"
 }
