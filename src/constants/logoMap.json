@@ -1,5 +1,8 @@
 {
   "django": "django-logo.png",
+  "html": "html-logo.png",
+  "select-2": "select2-logo.png",
+  "select2": "select2-logo.png",
   "git": "git-logo.png",
   "wordpress": "wordpress-logo.png",
   "kotlin": "kotlin-logo.png",
