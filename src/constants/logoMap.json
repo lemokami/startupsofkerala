@@ -1,6 +1,9 @@
 {
   "django": "django-logo.png",
   "tensorflow": "tensorflow-logo.png",
+  "postgres": "postgres-logo.png",
+  "aws": "aws-logo.png",
+  "gcp": "gcp-logo.png",
   "nginx" : "nginx-logo.png",
   "sql": "sql-logo.png",
   "java": "java-logo.png",
