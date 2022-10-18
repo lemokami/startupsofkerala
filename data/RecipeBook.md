@@ -1,0 +1,19 @@
+---
+name: RecipeBook
+description: RecipeBook is a recipe discovery app that curates dishes of different cuisines and guides amateur chefs by listing out possible recipes that can be prepared from whatever ingredients you have in hand.
+founded: December 2015
+based: Product
+domain: AI
+logo: Recipebook-Logo.jpg
+location: Kochi
+address: Kochi, Kerala, India
+technologies:
+  - Artificial Intelligence, 
+  - Natural Language Processing)
+  - Deep Learning
+  - Image Processing
+website: https://recipebook.io/
+email:  
+linkedin: 
+github: 
+---
