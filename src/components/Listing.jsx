@@ -1,9 +1,10 @@
 import { createSignal, For } from 'solid-js';
-import domains from '../constants/domains.json';
 import Card from './Card';
 
 const Listing = ({ data }) => {
   const [selectedDomain, setSelectedDomain] = createSignal('All');
+  const domains = ['All', ...new Set(data.map((d) => d.domain))];
+
   return (
     <div class='flex flex-col xl:flex-row gap-5 items-start container mx-auto px-4'>
       {/*domain select menu*/}
@@ -34,7 +35,9 @@ const Listing = ({ data }) => {
       {/* end domain select menu  */}
       <div class='xl:flex-[6] px-4 w-full'>
         <div class='flex items-center justify-between py-1 w-full border-b border-black/50 mb-4'>
-          <span class='font-semibold text-lg'>{selectedDomain()}</span>
+          <span class='font-semibold text-lg capitalize'>
+            {selectedDomain()}
+          </span>
           <a
             class='text-sm text-[#1488CC] font-semibold flex items-center gap-1'
             href='https://github.com/lemokami/startupsofkerala'>
@@ -60,7 +63,8 @@ const Listing = ({ data }) => {
           <For each={data}>
             {(startup) => (
               <>
-                {startup.domain === selectedDomain() ||
+                {startup.domain.toLowerCase() ===
+                  selectedDomain().toLowerCase() ||
                 selectedDomain() === 'All' ? (
                   <Card data={startup} />
                 ) : null}

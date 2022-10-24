@@ -9,7 +9,7 @@
 }
 @layer components {
   .domain-item {
-    @apply py-3 px-4 hover:bg-[#7FB2D9] hover:bg-opacity-[25%] cursor-pointer rounded-md;
+    @apply py-3 px-4 hover:bg-[#7FB2D9] hover:bg-opacity-[25%] cursor-pointer rounded-md capitalize;
   }
   .domain-item__active {
     @apply bg-[#7FB2D9] bg-opacity-[15%] border-r-[8px] rounded-md border-[#2840B7];
