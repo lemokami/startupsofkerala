@@ -1,5 +1,6 @@
 {
   "django": "django-logo.png",
+  "jenkins": "jenkins-logo.png",
   "tensorflow": "tensorflow-logo.png",
   "postgres": "postgres-logo.png",
   "aws": "aws-logo.png",
