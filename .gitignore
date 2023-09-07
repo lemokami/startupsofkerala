@@ -17,4 +17,5 @@ pnpm-debug.log*
 .env.production
 
 # macOS-specific files
+.idea
 .DS_Store
